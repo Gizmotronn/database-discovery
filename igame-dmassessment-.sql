@@ -1,4 +1,5 @@
 /** file: iGame (3).accdb
+QUERY NUMBER 1:
 "list all customer names & full addresses for customers whose delivery suburb begins with "S".
 **/
 
@@ -16,3 +17,10 @@ order by employee_name **/
 
 
 /** Address is not a value in the database, it would be a combination of the suburb & city values, etc. **/
+
+
+/** 
+QUERY NUMBER 2:
+**/
+
+SELECT customerSurname, customerFirstName, customerAddress**^  FROM customer WHERE CreatedDate BETWEEN GETDATE()-7 AND GETDATE()
