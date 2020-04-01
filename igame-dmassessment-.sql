@@ -24,3 +24,15 @@ QUERY NUMBER 2:
 **/
 
 SELECT customerSurname, customerFirstName, customerAddress**^  FROM customer WHERE CreatedDate BETWEEN GETDATE()-7 AND GETDATE()
+
+/** Query 3 **/
+SELECT customerSurname, customerFirstName FROM customer WHERE orderPrice > 150
+
+/** Query 4 **/
+
+/** Query 5 **/
+SELECT stockItemName, orderID, customerSurname, customerFirstName FROM customer, stock WHERE customerCity /** customer table **/ = Adelaide
+
+/** Query 6 **/
+
+/** Query 7 **/
