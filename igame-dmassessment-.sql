@@ -24,3 +24,18 @@ QUERY NUMBER 2:
 **/
 
 SELECT customerSurname, customerFirstName, customerAddress**^  FROM customer WHERE CreatedDate BETWEEN GETDATE()-7 AND GETDATE()
+
+/** Query 3 **/
+SELECT customerSurname, customerFirstName FROM customer WHERE orderPrice > 150
+
+/** Query 4 **/
+SELECT customerSurname, customerFirstName FROM customer, order WHERE deliveryDate BETWEEN GETDATE()-5 AND GETDATE()
+
+/** Query 5 **/
+SELECT stockItemName, orderID, customerSurname, customerFirstName FROM customer, stock WHERE customerCity /** customer table **/ = Adelaide
+
+/** Query 6 **/
+SELECT customerOrderID FROM customer WHERE customerSurname LIKE "%M"
+
+/** Query 7 **/
+SELECT customerSurname, customerFirstName FROM customer WHERE devstudio = "Activision", "Ubisoft"
