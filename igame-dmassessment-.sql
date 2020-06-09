@@ -3,6 +3,8 @@ QUERY NUMBER 1:
 "list all customer names & full addresses for customers whose delivery suburb begins with "S".
 **/
 
+/** Okay, so to create a table, "CREATE TABLE *tableName* (*primaryKey, dataType, PRIMARYKEY* *Attribute, datatype*), etc**/
+
 CREATE TABLE customer (customer_id INTEGER PRIMARY KEY, customerSurname TEXT, customerFirstName TEXT, customerEmail TEXT, customerPassword TEXT, customerOrderID INTEGER, customerCity TEXT, customerSuburb TEXT, customerMobilePhone INTEGER);
 
 INSERT INTO customer VALUES (1, "Canning-Ure", "Thomas"/** etc - see https://github.com/IrisDroidology/database-discovery/blob/master/iGame%20(3).accdb **/) 
